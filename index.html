@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Customer Tracker</title>
+    <meta name="description" content="Customer tracking app">
+    <meta name="keywords" content="customer tracking">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Header here</h1>
+    </header>
+    <main>
+        <div class="tableSectionContainer">
+            <div class="tableTabsContainer">
+                <button id="allCustTab" class="customersTab">All</button>
+                <button id="nonActiveCustTab" class="customersTab">Non-active</button>
+                <button id="negativeBalanceCustTab" class="customersTab">Negative balance</button>
+            </div>
+            <div class="tableContainer">
+                <table id="tableSelector" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Balance</th>
+                            <!--<th>Email</th>
+                        <th>Phone</th>-->
+                        </tr>
+                    </thead>
+                    <tbody id="tableBodySelector"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="formContainer">
+            <form>
+                <label for="id">ID:</label><br>
+                <input type="text" name="id" id="id" value="" class="input"><br>
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name" value="" class="input"><br>
+                <label for="active">Active:</label><br>
+                <input type="text" name="active" id="active" value="" class="input"><br>
+                <label for="balance">Balance:</label><br>
+                <input type="text" name="balance" id="balance" value="" class="input"><br>
+                <label for="discount">10% disount:</label><br>
+                <input type="text" name="discount" id="discount" value="" class="input"><br>
+                <label for="age">Age:</label><br>
+                <input type="text" name="age" id="age" value="" class="input"><br>
+                <label for="gender">Gender:</label><br>
+                <input type="text" name="gender" id="gender" value="" class="input"><br>
+                <label for="company">Company:</label><br>
+                <input type="text" name="company" id="company" value="" class="input"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email" value="" class="input"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="text" name="phone" id="phone" value="" class="input"><br>
+                <label for="address">Address:</label><br>
+                <input type="text" name="address" id="address" value="" class="input"><br>
+            </form>
+        </div>
+        <div class="totalBalanceContainer">
+            <p>Total Balance: <span id="totalBalance"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>Footer goes here</p>
+    </footer>
+</body>
+
+<script src="/scripts/app.js"></script>
+
+</html>
